@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class SmallestLargest {
+public class NumberInput {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
@@ -10,18 +10,23 @@ public class SmallestLargest {
         int num2 = input.nextInt();
         System.out.print("Enter third integer: ");
         int num3 = input.nextInt();
+		System.out.print("Enter fourth  interger: ");
+		int num4 = input.nextInt();
+		System.out.print("Enter fifth interger: ");
+		int num5 = input.nextInt();
 
-        int sum = num1 + num2 + num3;
-        int average = sum / 3;
-        int product =  num1 * num2 * num3;
+        int sum = num1 + num2 + num3 + num4 + num5;
+        int average = sum / 5;
+        int product =  num1 * num2 * num3 * num4 * num5;
+		
+		System.out.println();
+        System.out.println("=================");
 
-        int smallest = Math.min(num1, Math.min(num2, num3));
-        int largest = Math.max(num1, Math.max(num2, num3));
+        
 
         System.out.printf("Sum is %d%n", sum);
         System.out.printf("Average is %d%n", average);
         System.out.printf("Product is %d%n", product);
-        System.out.printf("Smallest is %d%n", smallest);
-        System.out.printf("Largest is %d%n", largest);
+        
     }
 }
