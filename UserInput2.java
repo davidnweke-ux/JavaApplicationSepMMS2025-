@@ -13,8 +13,7 @@ public class UserInput2 {
         System.out.print("Enter your age: ");
         byte age = input.nextByte();
 
-		System.out.println();
-        System.out.println("===========================================");
+		 
 
 		
 		System.out.printf("Hello %s%n",name);
